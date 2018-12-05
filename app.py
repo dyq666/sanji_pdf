@@ -32,4 +32,12 @@ def build_pdf():
 
 
 if __name__ == '__main__':
+    # 图片透明化
+    # from utils import change_opacity
+    # change_opacity(0.3, 'static/img/raw.png', 'static/img/opacity.png')
+
+    # 图片水印
+    # from utils import build_watermark
+    # build_watermark('./static/img/opacity.png', './static/img/watermark.png', *(25, 25, 25, 25))
+
     build_pdf()

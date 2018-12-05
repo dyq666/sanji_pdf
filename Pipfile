@@ -8,6 +8,7 @@ verify_ssl = true
 [packages]
 pdfkit = "*"
 lxml = "*"
+pillow = "*"
 
 [requires]
 python_version = "3.6"
