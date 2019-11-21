@@ -2,7 +2,6 @@ import os
 
 import pdfkit
 
-
 BIN_FILE = './static/bin/wkhtmltopdf'
 HTML_DIR = './static/html/'
 OUT_PATH = './out/example.pdf'
@@ -26,18 +25,15 @@ def build_pdf():
         '--footer-font-size': '8',
     }
     pdfkit.from_file(html_paths, OUT_PATH, options=pdf_options)
-    # 指定目录的方式
-    # config = pdfkit.configuration(wkhtmltopdf=BIN_FILE)
-    # pdfkit.from_file(html_paths, OUT_PATH, configuration=config, options=pdf_options)
 
 
 if __name__ == '__main__':
     # 图片透明化
-    # from utils import change_opacity
+    # from util import make_opacity
     # change_opacity(0.3, 'static/img/raw.png', 'static/img/opacity.png')
 
     # 图片水印
-    # from utils import build_watermark
+    # from util import build_watermark
     # build_watermark('./static/img/opacity.png', './static/img/watermark.png', *(25, 25, 25, 25))
 
     build_pdf()
