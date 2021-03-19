@@ -1,2 +1,2 @@
 pdfkit==0.6.1
-Pillow==6.2.2
+Pillow==8.1.1
